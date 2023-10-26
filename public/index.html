@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E2E Test</title>
+
+    <style>
+        #usernameForm,
+        #pinForm,
+        #secretForm {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="usernameForm">
+        <input type="text" id="username" placeholder="Username" />
+        <button type="button" id="submitUsername">Register</button>
+    </form>
+    <form id="pinForm">
+        <input type="password" id="pin" placeholder="6-Digit Pin" />
+        <button type="button" id="submitPin">Submit</button>
+    </form>
+    <form id="secretForm">
+        <input type="text" id="secretName" placeholder="Name" />
+        <input type="password" id="secret" placeholder="Secret" />
+        <button type="button" id="submitSecret">Submit</button>
+    </form>
+    <div id="dataContainer">
+        <p>Data is encrypted, please authenticate before</p>
+    </div>
+</body>
+
+</html>
